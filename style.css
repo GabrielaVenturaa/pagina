@@ -1,0 +1,587 @@
+body{
+    background-color: white;
+}
+
+.Logo{
+    width:250px;
+    height:250px;
+}
+
+.titulo a{
+    font-size: 50px;
+    color: limegreen;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: dashed;
+
+}
+
+.container{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.3fr 1.3fr 1.3fr 0.7fr;
+    grid-template-areas: "h h h h"
+                         "m m m m"
+                         "s c1 c1 c1"
+                         "c2 c3 c4 c5"
+                         "f f f f";
+                         gap: 1em;
+}
+
+.header{
+    grid-area: h;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    padding: 15px;
+    color: darkgreen;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.menu a:hover{
+    background-color: aliceblue;
+    color: aquamarine;
+}
+
+.main{
+    background-color: cadetblue;
+    grid-area: m;
+    height: 100vh;
+
+}
+
+.imgHome{
+   background-image: url(image/plano-home4.jpg);
+   height: 100vh;
+}
+
+.sidebar{
+    background-color: coral;
+    grid-area: s;
+    height: 67vh;
+    width: 55vh;
+    background-image: url(image/agricultura-organica2.jpg);
+}
+
+.imgSide{
+    width: 100px;
+    height: 100px;
+
+}
+
+.content1{
+    background-color: white;
+    grid-area: c1;
+    height: 67vh;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titulotexto{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:limegreen;
+}
+
+
+.Texto1{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color:black;
+    line-height: 25px;
+}
+
+.Texto2{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color:black;
+    line-height: 25px;
+
+}
+
+.Texto3{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color:black;
+
+}
+
+
+
+.content2{
+    background-color: white;
+    grid-area: c2;
+    height: 90vh; 
+    margin-left: 50px;
+}
+
+
+.Soja{
+    background-image: url(image/soja5.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center;
+
+}
+
+.TSoja{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.Tomate{
+    background-image: url(image/tomate.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center;
+}
+
+.TTomate{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.content3{
+    background-color: white;
+    grid-area: c3;
+    height: 90vh;
+}
+
+.Gergelim{
+    background-image: url(image/gergelim.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center;
+}
+
+.TGergelim{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.Granola{
+    background-image: url(image/granola.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center;
+}
+
+.TGranola{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.content4{
+    background-color: white;
+    grid-area: c4;
+    height: 90vh;
+}
+
+.Chia{
+    background-image: url(image/chia-2119771_640.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center;   
+}
+
+.TChia{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.Linhaça{
+    background-image: url(image/linhaça.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center; 
+}
+
+.TLinhaça{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.content5{
+    background-color: white;
+    grid-area: c5;
+    height: 90vh;
+}
+
+.Beterraba{
+    background-image: url(image/beterraba2.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center; 
+}
+
+.TBeterraba{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+.Batata{
+    background-image: url(image/batata2.jpg);
+    width: 40vh;
+    height: 30vh;
+    text-align: center; 
+}
+
+.TBatata{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+.footer{
+    background-color: white;
+    grid-area: f;
+    height: 20vh;
+}
+
+.Contatos{
+    font-size: 8vh;
+    color:limegreen;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.Telefone{
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.Endereço{
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+ @media(max-width:600px){ 
+    body{
+        background-color: white;
+    }
+    
+    .titulo a{
+        font-size: 50px;
+        color: limegreen;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        text-decoration: dashed;
+    
+    }
+    
+    .container{
+        display:grid;
+        height: 100vh;
+        width: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1.3fr 1.3fr 1.3fr 0.7fr;
+        grid-template-areas: "h h h h"
+                             "m m m m"
+                             "s c1 c1 c1"
+                             "c2 c3 c4 c5"
+                             "f f f f";
+                             gap: 1em;
+    }
+    
+    .header{
+        grid-area: h;
+        align-items: center;
+        display:flex;
+        justify-content: space-between;
+        height: 10vh;
+        margin-right: 60px;
+
+    }
+    
+    .menu a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 20px;
+        padding: 15px;
+        color: darkgreen;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+    
+    .menu a:hover{
+        background-color: aliceblue;
+        color: aquamarine;
+    }
+    
+    .main{
+        background-color: cadetblue;
+        grid-area: m;
+        height: 100vh;
+        margin-right: 60px;
+    
+    }
+    
+    .imgHome{
+       background-image: url(image/plano-home4.jpg);
+       height: 100vh;       
+    }
+    
+    .sidebar{
+        background-color: coral;
+        grid-area: s;
+        height: 67vh;
+        width: 55vh;
+        background-image: url(image/agricultura-organica2.jpg);
+    }
+    
+    .imgSide{
+        width: 100px;
+        height: 100px;
+    
+    }
+    
+    .content1{
+        background-color: white;
+        grid-area: c1;
+        height: 67vh;
+        font-size: 20px;
+        text-align: justify;
+        margin-right: 60px;
+    }
+    
+    .titulotexto{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:limegreen;
+    }
+    
+    
+    .Texto1{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color:black;
+        line-height: 25px;
+        margin-right: 60px;
+    }
+    
+    .Texto2{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        color:black;
+        line-height: 25px;
+        margin-right: 60px;
+    
+    }
+    
+    .Texto3{
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color:black;
+        margin-right: 60px;
+    
+    }
+    
+    
+    
+    .content2{
+        background-color: white;
+        grid-area: c2;
+        height: 90vh; 
+    }
+    
+    
+    .Soja{
+        background-image: url(image/soja5.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center;
+    
+    }
+    
+    .TSoja{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .Tomate{
+        background-image: url(image/tomate.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .TTomate{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .content3{
+        background-color: white;
+        grid-area: c3;
+        height: 90vh;
+    }
+    
+    .Gergelim{
+        background-image: url(image/gergelim.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .TGergelim{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    .Granola{
+        background-image: url(image/granola.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center;
+    }
+    
+    .TGranola{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    .content4{
+        background-color: white;
+        grid-area: c4;
+        height: 90vh;
+    }
+    
+    .Chia{
+        background-image: url(image/chia-2119771_640.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center;   
+    }
+    
+    .TChia{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    .Linhaça{
+        background-image: url(image/linhaça.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center; 
+    }
+    
+    .TLinhaça{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    .content5{
+        background-color: white;
+        grid-area: c5;
+        height: 90vh;
+    }
+    
+    .Beterraba{
+        background-image: url(image/beterraba2.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center; 
+        
+    }
+    
+    .TBeterraba{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    .Batata{
+        background-image: url(image/batata2.jpg);
+        width: 40vh;
+        height: 30vh;
+        text-align: center; 
+    }
+    
+    .TBatata{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    
+    
+    .footer{
+        background-color: white;
+        grid-area: f;
+        height: 20vh;
+    }
+    
+    .Contatos{
+        font-size: 8vh;
+        color:limegreen;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .Telefone{
+        font-size: 2vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+    .Endereço{
+        font-size: 2vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    
+
+ }

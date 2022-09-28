@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Saine</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        
+        $('a').on('click', function (event) {
+          
+          if (this.hash !== '') {
+            event.preventDefault()
+
+         
+            var hash = this.hash
+
+        
+            $('html, body').animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function () {
+                
+                window.location.hash = hash
+              }
+            )
+          } // fim
+
+          window.onscroll = function () {
+            myFunction()
+          }
+
+          var header = document.getElementById('Header')
+          var sticky = header.offsetTop
+
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add('sticky')
+            } else {
+              header.classList.remove('sticky')
+            }
+          }
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img class="Logo" src="image/logo3.jpg"/>
+        <h1 class="titulo"><a href="#">Organic Saine</a></h1>
+        <div class="menu">
+          <a href="#Main1" tabindex="1">Home</a>
+          <a href="#sobre" tabindex="1">Sobre</a>
+          <a href="#produtos" tabindex="1">Produtos</a>
+          <a href="#contatos" tabindex="1">Contatos</a>
+        </div>
+      </div>
+
+      <div id = "Main1" class="main">
+        <div class="imgHome"></div>
+      </div>
+
+      <div  class="sidebar">
+        <div class="imgSide"></div>
+      </div>
+
+      <div  id = "sobre"class="content1">
+        <h1 class="titulotexto">SOBRE NÓS</h1>
+        <p class="Texto1">
+          Nós acreditamos que a mudança começa pelo nosso prato. Por isso, temos
+          paixão em produzir alimentos naturais e orgânicos que mudam o corpo, a
+          alma e a Terra!
+        </p>
+        <p class="Texto2">
+          Um produto orgânico é “aquele obtido dentro de um sistema orgânico de
+          produção agropecuária – ou extrativista sustentável – que beneficie o
+          ecossistema local, proteja os recursos naturais, respeite as
+          características socioeconômicas e culturais da comunidade local,
+          preserve os direitos dos trabalhadores envolvidos e não utilize
+          organismos geneticamente modificados nem químicos sintéticos” (essa é
+          a definição de acordo com a Lei n° 10.831, de dezembro de 2003, que
+          regula a agricultura orgânica no Brasil). Ok, mas o que isso
+          significa? A agricultura orgânica não utiliza agrotóxicos, pesticidas
+          e fertilizantes sintéticos. Ou seja, são produtos livres de venenos ou
+          adubos químicos.
+        </p>
+        <p class="Texto3">
+          Por isso nós da Organic Saine preparamos produtos pensados
+          especialmente para você!
+        </p>
+      </div>
+
+      <div  id = "Produtos" class="content2">
+        <div class="Img1">
+          <img class="Soja">
+          <p class="TSoja">Soja</p>
+        </div>
+        <div class="Img2">
+          <img class="Tomate">
+          <p class="TTomate">Tomate</p>
+        </div>
+      </div>
+  
+      <div class="content3">
+        <div class="Img3">
+          <img class="Gergelim">
+          <p class="TGergelim">Gergelim</p>
+        </div>
+        <div class="Img4">
+          <img class="Granola">
+          <p class="TGranola">Granola</p>
+      </div>
+      </div>
+
+      <div class="content4">
+        <div class="Img5">
+          <img class="Chia">
+          <p class="TChia">Chia</p>
+        </div>
+          <div class="Img6">
+            <img class="Linhaça">
+            <p class="TLinhaça">Linhaça</p>
+          </div>
+      </div>
+
+      <div class="content5">
+        <div class="Img7">
+          <img class="Beterraba">
+          <p class="TBeterraba">Beterraba</p>
+        </div>
+        <div class="Img8">
+          <img class="Batata">
+          <p class="TBatata">Batata</p>
+        </div>
+      </div>
+      <div  id = "contato" class="footer">
+        <p  class="Contatos">CONTATOS</p>
+        <p class="Telefone">TELEFONE:(11) 2658-1729</p>
+        <p class="Endereço">ENDEREÇO LOJA FÍSICA: Rua Doutor Arnaldo, 27</p>
+      </div>
+    </div>
+  </body>
+</html>
